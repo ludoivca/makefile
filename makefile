@@ -9,7 +9,7 @@ data/listings.csv data/reviews.csv: src/download.R
 	R --vanilla < src/download.R
 	
 temp/aggregated_df.csv: src/clean_data.R data/listings.csv data/reviews.csv
-	R --vanilla < src/clean.R
+	R --vanilla < src/clean_data.R
 	
 temp/pivot_table.csv: src/pivot_table.R temp/aggregated_df.csv
 	R --vanilla < src/pivot_table.R

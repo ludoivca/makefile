@@ -1,3 +1,7 @@
+library(dplyr)
+library(reshape2)
+library(magrittr)
+
 ######################
 #### CLEAN DATA ######
 ######################
