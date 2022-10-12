@@ -21,6 +21,6 @@ $(TEMP)/pivot_table.csv: src/pivot_table.R $(TEMP)/aggregated_df.csv
 $(OUPUT)/plot_Antwerp.pdf: src/plot_antwerp.R $(TEMP)/pivot_table.csv
 	R --vanilla < src/plot_antwerp.R
 	
-$(OUPUT)/plot_all.pdf: $(OUPUT)/plot_all.R $(TEMP)/aggregated_df.csv
+$(OUPUT)/plot_all.pdf: src/plot_all.R $(TEMP)/aggregated_df.csv
 	R --vanilla < src/plot_all.R
 
