@@ -8,7 +8,7 @@ all: output/plot_Antwerp.pdf output/plot_all.pdf
 data/listings.csv data/reviews.csv: src/download.R
 	R --vanilla < src/download.R
 	
-temp/aggregated_df.csv: src/clean.R data/listings.csv data/reviews.csv
+temp/aggregated_df.csv: src/clean_data.R data/listings.csv data/reviews.csv
 	R --vanilla < src/clean.R
 	
 temp/pivot_table.csv: src/pivot_table.R temp/aggregated_df.csv
