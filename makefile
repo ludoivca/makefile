@@ -1,7 +1,7 @@
 
 ## Main build rule
 
-all: plot_Antwerp.pdf plot_all.pdf
+all: output/plot_Antwerp.pdf output/plot_all.pdf
 
 ## Sub build rules 
 
